@@ -21,7 +21,7 @@ class category_controller {
         })
     }
 
-    get_param(req, res) {
+    get_detail(req, res) {
         const { id } = req.params;
         let sql = `SELECT * FROM categories WHERE id = ${id}`;
 
